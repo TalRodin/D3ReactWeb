@@ -1,29 +1,91 @@
 import React from 'react'
 import styled from 'styled-components'
 import Tilt from 'react-parallax-tilt';
+import './Categories.css'
 
 const B = styled.div`
     align-items:center;
-    width: 20px;
-    height: 20px;
-    margin:6px;
+    width: 90px;
+    height: 90px;
+    margin:auto;
     cursor: pointer;
-    float:left;
-    padding:10px;
-    border-radius: 50px;
-    border: 0.05px solid #6d5dfc;
+    padding:1px;
+    border-radius: 50%;
+    border: 0.05px solid #663399;
     @media screen and (max-width: 489px) {
       padding:5px;
             } 
 `
 
+
 function Categories() {
     return (
-            <div>
-       
-                <B><i class="fa fa-bar-chart" style={{padding:'3px', color:"#6d5dfc"}} ></i></B>
-             
-            </div>
+        <>
+
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' , fontWeight: '300'}}>
+          <B><p>Bar</p></B> 
+      </div>
+    </Tilt>
+    
+  
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px' ,paddingBottom: '10px'}}>
+      <B><p>Line</p></B> 
+          
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px' ,paddingBottom: '10px'}}>
+      <B><p>Stack</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px'}}>
+      <B><p>Pie</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px' ,paddingBottom: '10px'}}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    <Tilt>
+      <div style={{ height: '100px', width:'100px', marginLeft:'50px',paddingBottom: '10px' }}>
+          <B><p>Chord</p></B> 
+      </div>
+    </Tilt>
+    </>
     )
 }
 
