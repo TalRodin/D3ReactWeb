@@ -8,7 +8,6 @@ const H1=styled.h1`
     position: absolute;
     top: 55%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
@@ -29,33 +28,40 @@ const Part1=styled.div`
     
 `
 const Part2=styled.div`
-height: 80vh;
-display: flex;
-align-items:center;
-justify-content:center;
-// background-color:#24292e;
-// background: linear-gradient(90deg, #fbfbfb 31px, transparent 1%) center, linear-gradient(#fbfbfb 31px, transparent 1%) center, #24292e;
-// background-size: 32px 32px;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    @media screen and (max-width: 600px) {
+      height: 100vh;
+     
+            }
 `
 const Part3=styled.div`
     height: 10vh;
-    // background-color:#24292e;
 `
 
 const C=styled.div`
-width: 50%;
 display: grid;
-grid-template-columns: repeat(4, 150px);
-padding-left: 20px;
-
-padding-right: 20px;
+grid-template-columns: repeat(6, 210px);
+padding: 10px;
 align-items: center;
-// background: linear-gradient(#24292e 1%, #24292e 90%)
+@media screen and (max-width: 600px) {
+  width: 80%;
+  grid-template-columns: repeat(3, 150px);
+  padding-left: 0px;
+  padding-right: 0px;
+        }
 
 `
 
 const T= styled.div`
 width: 40%;
+@media screen and (max-width: 600px) {
+  width: 90%;
+  // flex-direction:column;
+        }
 `
 const Hr = styled.hr`
     height: 1px;
@@ -71,13 +77,10 @@ function App() {
     <div>
       <Header/>
       <Part1>
-
-      
         <H1>D3 REACT</H1>
-        <div className='arrow__down'><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+        <div className='arrow__down' ><i class="fa fa-angle-down"  aria-hidden="true"></i></div>
       </Part1>
       <Part2>
-       
         <C>
            <Categories />
         </C>
