@@ -6,4 +6,12 @@
     position: sticky;
     top:0;
     z-index:100;
+    
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right:20px;
 }
