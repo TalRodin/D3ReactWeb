@@ -20,22 +20,26 @@ const B = styled.div`
       padding:5px;
             } 
     &:hover{
-      border: 0.1px solid #4B4A5E;
-      transition:1s ease;
+      border: 0.1px solid #24292e;
+      transition:0.3s ease;
+      
     }
 `
+
+
+
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
     backgroundColor: "transparent",
-    color: 'rgba(0, 0, 0, 0.87)',
+    color: '#53646e',
     boxShadow: theme.shadows[4],
     fontSize: 11,
-    border: '1px solid #4B4A5E',
+    border: '1px solid #24292e',
     maxWidth: 120,
     
   },
   arrow: {
-    color: "#4B4A5E",
+    color: "#24292e",
     
   }
   ,
@@ -75,9 +79,9 @@ function Categories() {
     arrow
   >
       <div style={{ height: '100px', width:'100px', paddingBottom: '10px'}}>
-      <B ><svg width="157" height="99" viewBox="0 0 317 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <B ><svg width="157" height="99" viewBox="0 0 317 179" fill="none" stroke="#0166d6" stroke-width="4" xmlns="http://www.w3.org/2000/svg">
 
-<path d="M78 126L109.636 94.5893H142.364L162 69.4608L193 108.824L238 53" stroke="#0166d6" stroke-width="4"/>
+<path d="M78 126L109.636 94.5893H142.364L162 69.4608L193 108.824L238 53" />
 </svg></B> 
           
       </div>

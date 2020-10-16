@@ -11,7 +11,7 @@ const H1=styled.h1`
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
-    color:#4b4a5e;
+    color:#0166d6;
     font-size:20px;
     font-weight: 500;
     font-family: Helvetica;
@@ -20,11 +20,11 @@ const H1=styled.h1`
 `
 const Part1=styled.div`
     height: 100vh;
-    background-color:#24292e;
+    // background-color:#24292e;
     // background: linear-gradient(90deg, #24292e 31px, transparent 1%) center, linear-gradient(#24292e 31px, transparent 1%) center, #53646e;
     // background-size: 32px 32px;
-    background: linear-gradient(90deg, #fff 31px, transparent 1%) center, linear-gradient(#fff 31px, transparent 1%) center, #24292e;
-    background-size: 32px 32px;
+    // background: linear-gradient(90deg, #fff 31px, transparent 1%) center, linear-gradient(#fff 31px, transparent 1%) center, #53646e;
+    // background-size: 32px 32px;
     
 `
 const Part2=styled.div`
@@ -39,7 +39,8 @@ const Part2=styled.div`
             }
 `
 const Part3=styled.div`
-    height: 10vh;
+    height: 50vh;
+    background-color:#24292e;
 `
 
 const C=styled.div`
@@ -58,16 +59,19 @@ align-items: center;
 
 const T= styled.div`
 width: 40%;
+color:#53646e;
 @media screen and (max-width: 600px) {
   width: 90%;
-  // flex-direction:column;
         }
+      
 `
 const Hr = styled.hr`
-    height: 1px;
+    margin-top:30px;
+    height: 0.5px;
     background-color: #e1e4e8;
     border: none;
     width:90vw;
+    
 `
 
 
@@ -89,8 +93,9 @@ function App() {
         </T>
       </Part2>
       <Part3>
-        <Hr/>
-        <h5>© 2020 D3 React</h5>
+        {/* <Hr/>
+        <Hr/> */}
+        <h5>D3 React</h5>
       </Part3>
     </div>
   );
