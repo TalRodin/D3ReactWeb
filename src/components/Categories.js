@@ -9,7 +9,7 @@ const B = styled.div`
 
     display:flex;
     align-items:center;
-    width: 205px;
+    width: 225px;
     height: 105px;
     margin:auto;
     cursor: pointer;
@@ -30,16 +30,16 @@ const B = styled.div`
 
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
-    backgroundColor: "transparent",
-    color: '#53646e',
+    backgroundColor: "#37393f",
+    color: '#eee',
     boxShadow: theme.shadows[4],
     fontSize: 11,
-    border: '1px solid #24292e',
+    border: '1px solid #37393f',
     maxWidth: 120,
     
   },
   arrow: {
-    color: "#24292e",
+    color: "#37393f",
     
   }
   ,

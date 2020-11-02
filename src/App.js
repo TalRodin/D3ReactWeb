@@ -6,16 +6,16 @@ import Header from './Header'
 
 const H1=styled.h1`
     position: absolute;
-    top: 55%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
-    color:#0166d6;
+    color:#2f3136;
     font-size:20px;
-    font-weight: 500;
+    font-weight: 400;
     font-family: Helvetica;
-    letter-spacing: 1px;
+    letter-spacing: 10px;
     word-spacing: 5px;
 `
 const Part1=styled.div`
@@ -45,7 +45,7 @@ const Part3=styled.div`
 
 const C=styled.div`
 display: grid;
-grid-template-columns: repeat(6, 210px);
+grid-template-columns: repeat(6, 230px);
 padding: 10px;
 align-items: center;
 @media screen and (max-width: 600px) {
@@ -82,7 +82,7 @@ function App() {
       <Header/>
       <Part1>
         <H1>D3 REACT</H1>
-        <div className='arrow__down' ><i class="fa fa-angle-down"  aria-hidden="true"></i></div>
+        {/* <div className='arrow__down' ><i class="fa fa-angle-down"  aria-hidden="true"></i></div> */}
       </Part1>
       <Part2>
         <C>
@@ -93,8 +93,7 @@ function App() {
         </T>
       </Part2>
       <Part3>
-        {/* <Hr/>
-        <Hr/> */}
+         <div className='line'></div>
         <h5>D3 React</h5>
       </Part3>
     </div>

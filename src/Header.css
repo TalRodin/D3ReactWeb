@@ -6,13 +6,20 @@
     position: sticky;
     top:0;
     z-index:100;
-    border-top: 5px solid #24292e;
+    border-top: 5px solid #2f3136;
 }
 
 .icons{
     display: flex;
     align-items: center;
     position: absolute;
-    right:20px;
+    right:50px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:50px;
 }
 
