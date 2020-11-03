@@ -3,17 +3,20 @@ import './App.css';
 import styled from 'styled-components'
 import Categories from './components/Categories'
 import Header from './Header'
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
 const H1=styled.h1`
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
     color:#2f3136;
     font-size:20px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: Helvetica;
     letter-spacing: 10px;
     word-spacing: 5px;
@@ -77,11 +80,34 @@ const Hr = styled.hr`
 
 
 function App() {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 5000,
+    cssEase: "linear"
+  };
   return (
     <div>
       <Header/>
       <Part1>
         <H1>D3 REACT</H1>
+        <div >
+            <Slider {...settings} >
+                    <div >
+                     <img src='https://i.pinimg.com/564x/32/e1/c1/32e1c1d569bb7f4dd1145416fb4902ac.jpg'/>
+                     </div>
+                    <div >
+                     <img src='https://i.pinimg.com/564x/9a/61/de/9a61de2e902f49455fc0b7dec17e4a42.jpg'/>
+                    </div>
+                    <div >
+                     <img src='https://i.pinimg.com/564x/32/e1/c1/32e1c1d569bb7f4dd1145416fb4902ac.jpg'/>
+                    </div>
+            </Slider>
+            </div >
         {/* <div className='arrow__down' ><i class="fa fa-angle-down"  aria-hidden="true"></i></div> */}
       </Part1>
       <Part2>
@@ -89,7 +115,7 @@ function App() {
            <Categories />
         </C>
         <T>
-        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut erat vitae ligula cursus elementum. Phasellus nisi sapien, tincidunt sed libero sit amet, aliquet elementum neque. Praesent bibendum sapien dui. Praesent malesuada, nisi nec porttitor luctus, lacus quam feugiat leo, a feugiat eros dui ac dolor. Sed non bibendum odio. Quisque venenatis nulla sed dapibus mollis. Phasellus sem nunc, pretium sed tincidunt eu, bibendum vel tortor. Nunc vitae risus dignissim, tempor lorem sit amet, sodales leo.</h6>
         </T>
       </Part2>
       <Part3>
